@@ -381,7 +381,7 @@ jobs:
       - revert-migrations
   cleanup:
     docker:
-      - image: amazon/aws-clie
+      - image: amazon/aws-cli
     steps:
       - checkout
       - run:
