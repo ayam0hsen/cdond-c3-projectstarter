@@ -6,8 +6,8 @@
 
 - name: "Unarchive backend files"
   unarchive:
-    source: artifact.tar.gz
-    destination: ~/backend-app
+    src: artifact.tar.gz
+    dest: ~/backend-app
     
 
 - name: "Installing dependencies"
