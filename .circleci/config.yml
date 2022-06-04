@@ -369,7 +369,7 @@ jobs:
               list-exports --query "Exports[?Name==\`WorkflowID\`].Value" \
               --no-paginate --output text)
 
-            curl -k https://kvdb.io/8Z1Ghy8FB75oagM8HasGTX/${OldWorkflowID}  -d '${OldWorkflowID}'
+            curl -k https://kvdb.io/8Z1Ghy8FB75oagM8HasGTX/${OldWorkflowID}  -d ${OldWorkflowID}
 
             aws cloudformation deploy \
               --template-file .circleci/files/cloudfront.yml \
